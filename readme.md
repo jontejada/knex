@@ -28,7 +28,41 @@
 	* dev debug: true
 	* dev pool: {min:1, max:1}
 
-in app.js:
+setup app.js:
+
+setup users.js:
+
+setup knex.js and knexfile.js:
+
+create a migration createusers with the knex cli:
+_________________________________
+jonmacbook:express_knex jon$ knex
+
+  Usage: knex [options] [command]
+
+  Commands:
+
+    init [options]                         Create a fresh knexfile.
+    migrate:make [options] <name>         Create a named migration file.
+    migrate:latest                         Run all migrations that have not yet been run.
+    migrate:rollback                       Rollback the last set of migrations performed.
+    migrate:currentVersion                View the current version for the migration.
+    seed:make [options] <name>            Create a named seed file.
+    seed:run                              Run seed files.
+
+  Options:
+
+    -h, --help         output usage information
+    -V, --version      output the version number
+    --debug            Run with debugging.
+    --knexfile [path]  Specify the knexfile path.
+    --cwd [path]       Specify the working directory.
+    --env [name]       environment, default: process.env.NODE_ENV || development
+_________________________________
+
+* `knex migrate:make create_users` generates migrations dir with timestamped 20151217144455_create_users.js file
+* fill 20151217144455_create_users.js exported functions
+* `knex migrate:latest`
 
 
 
