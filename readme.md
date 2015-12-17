@@ -1,3 +1,5 @@
+#initial setup
+
 * `npm install --save express ejs pg knex body-parser method-override morgan locus`
 	* express: framework 
 	* ejs: emedded javascript inside serverside template html
@@ -31,6 +33,8 @@
 setup app.js:
 
 setup users.js:
+
+#knex
 
 setup knex.js and knexfile.js:
 
@@ -68,7 +72,7 @@ _________________________________
 
 
 ____________________________________________________________
-error during npm install
+#error during npm install
 > deasync@0.1.4 install /Users/jon/GalvanizeProjects/express_knex/node_modules/deasync
 > node ./build.js
 
