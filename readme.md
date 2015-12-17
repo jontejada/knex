@@ -1,14 +1,14 @@
 #initial setup
 
 * `npm install --save express ejs pg knex body-parser method-override morgan locus`
-	* express: framework 
-	* ejs: emedded javascript inside serverside template html
-	* pg: connect to postgres
-	* knex: knex stuff
-	* body-parser: getting stuff from body of POST request
-	* method-override: UPDATE and DELETE
-	* morgan: server side logging 
-	* locus: debugging
+	* [express](https://www.npmjs.com/package/express): framework 
+	* [ejs](https://www.npmjs.com/package/ejs): emedded javascript inside serverside template html
+	* [pg](https://www.npmjs.com/package/pg): connect to postgres
+	* [knex](https://www.npmjs.com/package/knex): knex stuff
+	* [body-parser](https://www.npmjs.com/package/body-parser): getting stuff from body of POST request
+	* [method-override](https://www.npmjs.com/package/method-override): UPDATE and DELETE
+	* [morgan](https://www.npmjs.com/package/morgan): server side logging 
+	* [locus](https://www.npmjs.com/package/locus): debugging
 
 * `knex init` to start knex by creating a knexfile specifies connection to database
 
@@ -34,7 +34,7 @@ setup app.js:
 
 setup users.js:
 
-#knex
+#[knex](http://knexjs.org/)
 
 setup knex.js and knexfile.js:
 
@@ -68,7 +68,9 @@ _________________________________
 * fill 20151217144455_create_users.js exported functions
 * `knex migrate:latest`
 
+* mods to users.js with knex.then...
 
+* make form
 
 
 ____________________________________________________________
