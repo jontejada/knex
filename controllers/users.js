@@ -2,6 +2,7 @@
 var express = require('express');
 var router = express.Router();
 var knex = require('../db/knex');
+require('locus');
 
 router.get('/', function(req,res){
 	knex('users').then(function(users){
@@ -16,7 +17,12 @@ router.get('/new', function(req,res){
 });
 
 router.post('/', function(req,res){
-	res.redirect('/users');
+	// knex('users').insert({name:name});
+	knex('users').insert(req.body).then(function(){
+		res.redirect('/users');
+	});
+	// eval(locus);
+	// res.redirect('/users');
 });
 
 module.exports = router;
