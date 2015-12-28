@@ -1,7 +1,11 @@
 var express = require('express');
 var app = express();
 require('locus');
-eval(locus);
+// eval(locus);
+app.get('/', function(req,res){
+	res.send('hello');
+});
+
 // console.log(express);
 // console.log('=============================================')
 // console.log(app);
